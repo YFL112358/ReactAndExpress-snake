@@ -1,0 +1,37 @@
+{
+  "name": "ExpressAndReactDemo-web",
+  "private": true,
+  "dependencies": {
+    "react-dom": "*",
+    "react-router": "*",
+    "whatwg-fetch": "*",
+    "babel-polyfill": "*",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.1",
+    "babel-preset-react": "*",
+    "babel-preset-es2015": "*",
+    "babel-loader": "^6.2.9",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "node-sass": "^3.13.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "autoprefixer": "^6.4.1",
+    "babel-core": "^6.14.0",
+    "babel-plugin-react-transform": "^2.0.2",
+    "json-loader": "^0.5.4",
+    "open-browser-webpack-plugin": "0.0.3",
+    "postcss-loader": "^0.13.0",
+    "react-transform-hmr": "^1.0.4",
+    "redux-devtools": "^3.3.1",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.1.1",
+    "url-loader": "^0.5.7"
+  }
+}
