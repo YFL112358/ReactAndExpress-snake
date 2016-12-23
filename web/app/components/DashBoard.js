@@ -25,7 +25,7 @@ class DashBoard extends React.PureComponent{
 		}
 		return(
 			<div className="dashboard">
-				<h3>React贪吃蛇</h3>
+				<h2><center>React Snake</center></h2>
 				<div>
 					<span>得分:{this.props.score}</span>
 					<span>速度:{this.props.speed}</span>

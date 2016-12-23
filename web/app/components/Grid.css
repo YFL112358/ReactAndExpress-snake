@@ -1,5 +1,6 @@
 .cell{
 	display:inline-block;
+	color:#BBBBBB;
 	width:19px;
 	height:19px;
 	box-sizing: border-box;

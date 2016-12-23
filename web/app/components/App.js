@@ -2,7 +2,7 @@ import React from "react"
 import Info from "./Info"
 import ControlBoard from "../containers/ControlBoard"
 import LiveSnake from "../containers/LiveSnake"
-
+import KeyBoard from "./keyboard/index.js"
 
 const App=()=>{
 	return (
@@ -10,6 +10,7 @@ const App=()=>{
 			<LiveSnake />
 			<Info />
 			<ControlBoard />
+			<KeyBoard />
 		</div>
 	)
 	

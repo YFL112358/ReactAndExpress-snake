@@ -1,5 +1,6 @@
 import Snake from "../components/Snake"
 import {connect} from "react-redux"
+import KeyBoard from "../components/keyboard/index"
 import {moveForward,changeDir,toggleMove,reStart,becomeGameover} from "../actions/index.js"
 
 
