@@ -86,78 +86,69 @@ class Button extends React.Component {
 	}
 	render() {
 
-			let foodArr=this.props.foodArr
-			let foodStyle={left:foodArr.get("x")*20,top:foodArr.get("y")*20}
+		let foodArr=this.props.foodArr
+		let foodStyle={left:foodArr.get("x")*20,top:foodArr.get("y")*20}
 
-			return (
+		return (
 
-					<div className="snake" >
-					<Grid cols={20} rows={20} />
-					<div>
-					{this.props.snakeArr.map((pos,index)=>(
-								<span className="snake-body" key={pos.get("x")+"-"+pos.get("y")} style={{left:pos.get("x")*20,top:pos.get("y")*20}}></span>
-								))}
-					</div>
-					<span className="snake-food"  style={foodStyle}></span>
-					<div
-					className='keyboard'
-						style={{
-							marginTop:'30px',
-							color:'blue',
-						}}
-				>
-					<button className="keyboard-button"
-								style={{
-								top:'0px',
-								left:'274px',
-								color:'red',
-
-								}}
-					onClick = {(evt) => {this.handleKeyDown(38)}}
-
-					>U</button>
-					<button className="keyboard-button"
+			<div className="snake" >
+			<Grid cols={20} rows={20} />
+			<div>
+				{this.props.snakeArr.map((pos,index)=>(
+						<span className="snake-body" key={pos.get("x")+"-"+pos.get("y")} style={{left:pos.get("x")*20,top:pos.get("y")*20}}></span>
+						))}
+			</div>
+			<span className="snake-food"  style={foodStyle}></span>
+			<div
+			className='keyboard'
+				style={{
+					marginTop:'30px',
+					color:'blue',
+				}}
+			>
+				<button className="keyboard-button"
 					style={{
-								top:'120px',
-								left:'274px',
-
-
+					top:'0px',
+					left:'274px',
 					}}
-					onClick = {(evt) => {this.handleKeyDown(40)}}
-					>D</button>
-					<button className="keyboard-button"
-					style={{
-								top:'60px',
-								left:'204px',
+				onClick = {(evt) => {this.handleKeyDown(38)}}
 
-
-					}}
-					onClick = {(evt) => {this.handleKeyDown(37)}}
-					>L</button>
-					<button className="keyboard-button"
-					style={{
-								top:'60px',
-								left:'350px',
-
-					}}
-					onClick = {(evt) => {this.handleKeyDown(39)}}
-					>R</button>
-					<button className="keyboard-button"
-					style={{
-								top:'0px',
-								left:'106px',
-							  position:'absolute'
-
-					}}
-					 onClick = {(evt) => {this.handleKeyDown(80)}}
-					>P/S</button>
-					<button className="keyboard-button"
-					style={{
-								top:'0px',
-								left:'16px'
-					}}
-					 onClick = { (evt) => {this.handleKeyDown(82)}}
-					>Restart</button>
+				>U</button>
+				<button className="keyboard-button"
+				style={{
+					top:'120px',
+					left:'274px',
+				}}
+				onClick = {(evt) => {this.handleKeyDown(40)}}
+				>D</button>
+				<button className="keyboard-button"
+				style={{
+					top:'60px',
+					left:'204px',
+				}}
+				onClick = {(evt) => {this.handleKeyDown(37)}}
+				>L</button>
+				<button className="keyboard-button"
+				style={{
+					top:'60px',
+					left:'350px',
+				}}
+				onClick = {(evt) => {this.handleKeyDown(39)}}
+				>R</button>
+				<button className="keyboard-button"
+				style={{
+					top:'0px',
+					left:'106px',
+				}}
+				 onClick = {(evt) => {this.handleKeyDown(80)}}
+				>P/S</button>
+				<button className="keyboard-button"
+				style={{
+					top:'0px',
+					left:'16px'
+				}}
+				 onClick = { (evt) => {this.handleKeyDown(82)}}
+				>Restart</button>
 				</div>
 			</div>
 		);
