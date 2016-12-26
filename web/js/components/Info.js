@@ -1,5 +1,5 @@
 import React from "react"
-import "./Info.css"
+import "./../../css/Info.css"
 
 class Info extends React.Component{
 	render(){

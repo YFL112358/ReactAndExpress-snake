@@ -1,7 +1,7 @@
 .snake{
-	width:400px;
-	height:400px;
-	position:relative;
+	width:100%;
+	height:100%;
+	position:absolute;
 }
 
 .snake-body,.snake-food{
@@ -11,6 +11,7 @@
 	box-sizing: border-box;
 	margin:0px 1px 1px 0px;
 	position:absolute;
+	border-radius:50%;
 }
 
 .snake-body{
@@ -27,8 +28,15 @@
   margin: 20px auto 0;
   position:absolute;
 }
-.keyboard.button{
-	color:blue;
+.keyboard-button{
+	text-align: center;
+	color: red;
+	position: absolute;
+	white-space: nowrap;
+	line-height: 1.6;
+ 	width: 52px;
+  height: 52px;
+	border-radius:50%;
+	box-shadow: 0 5px 10px rgba(255, 255, 255, .8) inset;
+	background-color: blue
 }
- 
-

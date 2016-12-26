@@ -1,5 +1,5 @@
 import React,{PropTypes} from "react"
-import "./DashBoard.css"
+import "./../../css/DashBoard.css"
 
 class DashBoard extends React.PureComponent{
 	constructor(props){
@@ -30,9 +30,9 @@ class DashBoard extends React.PureComponent{
 					<span>得分:{this.props.score}</span>
 					<span>速度:{this.props.speed}</span>
 					<select value={this.props.speed} onChange={this.handleChange}>
-						<option value="100">快</option>
+						<option value="100">慢</option>
 						<option value="200">中</option>
-						<option value="300">慢</option>
+						<option value="300">快</option>
 					</select>
 					<span>{gameState}</span>
 				</div>

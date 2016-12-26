@@ -1,6 +1,6 @@
 import DashBoard from "../components/DashBoard"
 import {connect} from "react-redux"
-import {changeSpeed} from "../actions/index"
+import {changeSpeed} from "../action"
 
 const mapStateToProps=(state)=>{
 	return {

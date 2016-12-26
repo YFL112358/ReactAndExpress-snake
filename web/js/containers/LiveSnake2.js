@@ -1,6 +1,6 @@
 import Snake2 from "../components/button"
 import {connect} from "react-redux"
-import {moveForward,changeDir,toggleMove,reStart,becomeGameover} from "../actions/index.js"
+import {moveForward,changeDir,toggleMove,reStart,becomeGameover} from "../action"
 
 
 const mapStateToProps=(state)=>{

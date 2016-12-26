@@ -1,6 +1,6 @@
 import React,{PropTypes} from "react"
 import Grid from "./Grid"
-import "./Snake.css"
+import "./../../css/Snake.css"
 
 class Snake extends React.PureComponent{
 	constructor(props){
@@ -8,8 +8,8 @@ class Snake extends React.PureComponent{
 		this.handleKeyDown=this.handleKeyDown.bind(this);
 	}
 
-	handleKeyDown(e){
-		switch(e.keyCode){
+	handleKeyDown(key:number){
+		switch(key){
 			case 37:
 				if(this.props.direction!="RIGHT"&&this.props.moving){
 					this.props.changeDir("LEFT")

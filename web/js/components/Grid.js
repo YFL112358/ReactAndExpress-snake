@@ -1,5 +1,5 @@
 import React,{PropTypes} from "react"
-import "./Grid.css"
+import "./../../css/Grid.css"
 
 
 class Grid extends React.PureComponent{
@@ -9,7 +9,7 @@ class Grid extends React.PureComponent{
 
 	componentDidUpdate(){
 		console.log("grid updated!")
-	}	
+	}
 
 	render(){
 		let gridArr=[];
