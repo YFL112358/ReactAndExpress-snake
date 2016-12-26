@@ -5,12 +5,10 @@ import  './../../css/Snake.css'
 class Button extends React.Component {
 	constructor(props){
 		super(props);
-	//	this.handleKeyDown=this.handleKeyDown.bind(this);
 
 	}
 
 	handleKeyDown(e){
-		console.log('test')
 		switch(e){
 			case 37:
 				if(this.props.direction!="RIGHT"&&this.props.moving){
@@ -45,7 +43,6 @@ class Button extends React.Component {
 				}
 				break;
 			case 82:
-				console.log('start clicked');
 				if(this.timer ){
 					clearInterval(this.timer);
 				}
@@ -87,9 +84,7 @@ class Button extends React.Component {
 			clearInterval(this.timer);
 		}
 	}
-
-
-		render() {
+	render() {
 
 			let foodArr=this.props.foodArr
 			let foodStyle={left:foodArr.get("x")*20,top:foodArr.get("y")*20}
@@ -118,8 +113,6 @@ class Button extends React.Component {
 						color:'red',
 
 						}}
-
-			//onClick = {this.handleKeyDown(this.e.keyCode=38)}
 			onClick = {(evt) => {this.handleKeyDown(38)}}
 
 			>U</button>
@@ -130,8 +123,6 @@ class Button extends React.Component {
 
 
 			}}
-
-			//nClick = {this.handleKeyDown(this.e.keyCode=40)}
 			onClick = {(evt) => {this.handleKeyDown(40)}}
 			>D</button>
 			<button className="keyboard-button"
@@ -141,8 +132,6 @@ class Button extends React.Component {
 
 
 			}}
-
-			//nClick = {this.handleKeyDown(this.e.keyCode=37)}
 			onClick = {(evt) => {this.handleKeyDown(37)}}
 			>L</button>
 			<button className="keyboard-button"
@@ -150,10 +139,7 @@ class Button extends React.Component {
 						top:'60px',
 						left:'350px',
 
-
 			}}
-
-		//onClick = {this.handleKeyDown(this.e.keyCode=39)}
 			onClick = {(evt) => {this.handleKeyDown(39)}}
 			>R</button>
 			<button className="keyboard-button"
@@ -163,21 +149,14 @@ class Button extends React.Component {
 					  position:'absolute'
 
 			}}
-
-//			 onClick = {this.handleKeyDown(this.e.keyCode=80)}
 			 onClick = {(evt) => {this.handleKeyDown(80)}}
-
 			>P/S</button>
 			<button className="keyboard-button"
 			style={{
 						top:'0px',
 						left:'16px'
 			}}
-
 			 onClick = { (evt) => {this.handleKeyDown(82)}}
-
-			 //onClick = {this.handleKeyDown(this.e.keyCode=82)}
-
 			>Restart</button>
 	</div>
 </div>
