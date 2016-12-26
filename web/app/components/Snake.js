@@ -41,7 +41,7 @@ class Snake extends React.PureComponent{
 					}
 				}
 				break;
-			case 82: 
+			case 82:
 				if(this.timer ){
 					clearInterval(this.timer);
 				}
@@ -78,7 +78,7 @@ class Snake extends React.PureComponent{
 		if(this.timer!==undefined){
 			clearInterval(this.timer);
 		}
-		
+
 	}
 
 	render(){

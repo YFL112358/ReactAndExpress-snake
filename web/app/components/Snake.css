@@ -20,3 +20,15 @@
 .snake-food{
 	background-color: #DE2FA7;
 }
+
+.keyboard{
+  width: 580px;
+  height: 330px;
+  margin: 20px auto 0;
+  position:absolute;
+}
+.keyboard.button{
+	color:blue;
+}
+ 
+

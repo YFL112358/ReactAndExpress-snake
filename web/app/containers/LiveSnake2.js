@@ -1,6 +1,5 @@
-import Snake from "../components/Snake"
+import Snake2 from "../components/button"
 import {connect} from "react-redux"
-import KeyBoard from "../components/keyboard/index"
 import {moveForward,changeDir,toggleMove,reStart,becomeGameover} from "../actions/index.js"
 
 
@@ -26,4 +25,4 @@ const mapDispatchToProps=(dispatch)=>{
 }
 
 
-export default connect(mapStateToProps,mapDispatchToProps)(Snake)
+export default connect(mapStateToProps,mapDispatchToProps)(Snake2)
