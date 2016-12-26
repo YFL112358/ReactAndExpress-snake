@@ -104,63 +104,63 @@ class Button extends React.Component {
 						style={{
 							marginTop:'30px',
 							color:'blue',
-			}}
-			>
-			<button className="keyboard-button"
-						style={{
-						top:'0px',
-						left:'274px',
-						color:'red',
-
 						}}
-			onClick = {(evt) => {this.handleKeyDown(38)}}
+				>
+					<button className="keyboard-button"
+								style={{
+								top:'0px',
+								left:'274px',
+								color:'red',
 
-			>U</button>
-			<button className="keyboard-button"
-			style={{
-						top:'120px',
-						left:'274px',
+								}}
+					onClick = {(evt) => {this.handleKeyDown(38)}}
+
+					>U</button>
+					<button className="keyboard-button"
+					style={{
+								top:'120px',
+								left:'274px',
 
 
-			}}
-			onClick = {(evt) => {this.handleKeyDown(40)}}
-			>D</button>
-			<button className="keyboard-button"
-			style={{
-						top:'60px',
-						left:'204px',
+					}}
+					onClick = {(evt) => {this.handleKeyDown(40)}}
+					>D</button>
+					<button className="keyboard-button"
+					style={{
+								top:'60px',
+								left:'204px',
 
 
-			}}
-			onClick = {(evt) => {this.handleKeyDown(37)}}
-			>L</button>
-			<button className="keyboard-button"
-			style={{
-						top:'60px',
-						left:'350px',
+					}}
+					onClick = {(evt) => {this.handleKeyDown(37)}}
+					>L</button>
+					<button className="keyboard-button"
+					style={{
+								top:'60px',
+								left:'350px',
 
-			}}
-			onClick = {(evt) => {this.handleKeyDown(39)}}
-			>R</button>
-			<button className="keyboard-button"
-			style={{
-						top:'0px',
-						left:'106px',
-					  position:'absolute'
+					}}
+					onClick = {(evt) => {this.handleKeyDown(39)}}
+					>R</button>
+					<button className="keyboard-button"
+					style={{
+								top:'0px',
+								left:'106px',
+							  position:'absolute'
 
-			}}
-			 onClick = {(evt) => {this.handleKeyDown(80)}}
-			>P/S</button>
-			<button className="keyboard-button"
-			style={{
-						top:'0px',
-						left:'16px'
-			}}
-			 onClick = { (evt) => {this.handleKeyDown(82)}}
-			>Restart</button>
-	</div>
-</div>
-);
+					}}
+					 onClick = {(evt) => {this.handleKeyDown(80)}}
+					>P/S</button>
+					<button className="keyboard-button"
+					style={{
+								top:'0px',
+								left:'16px'
+					}}
+					 onClick = { (evt) => {this.handleKeyDown(82)}}
+					>Restart</button>
+				</div>
+			</div>
+		);
 	}
 }
 
